@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>John Jay Mercines</title>
+<link rel="stylesheet" type="text/css" href="home.css">
+</head>
+
+<body>
+	<!--container-->
+	<div id="container">
+		<div id="Title">
+		<label>Title</label><br>
+			<input type ="text" id="title" placeholder="Title" size ="42"/>
+		</div>
+
+		<!--author-->
+		<div>
+			<label>Author</label> <br>
+			<input type="text" id="firstname" placeholder ="First Name"/> 
+			<input type="text" id="lastname" placeholder ="Last Name"/> <br>
+			</div>
+
+		<!--content-->
+		<div>
+			<label>Content</label><br>
+			<textarea id="content" rows="12" cols="41.5"></textarea>	
+		</div>
+
+		<!--submit button-->
+		<button onclick="postBlog()">Submit</button>
+		
+	
+	</div><!--End of Container-->
+	<br>
+	<!--output-->
+		<div>
+			<form id="output">
+				<h3 id="post-title" ></h3>
+				<h4 id="post-author"></h4>
+				<p id="post-content"></p>
+				
+				<!--clear button-->
+				<button onclick="clearBox()">Clear</button>
+			</form>		
+		</div>
+
+<script type="text/javascript" src="home.js"></script>
+</body>
+</html>
